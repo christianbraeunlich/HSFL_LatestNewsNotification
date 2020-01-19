@@ -1,0 +1,13 @@
+[Unit]
+Description=HSFL_LNN
+After=multi-user.target
+ 
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/HSFL_LatestNewsNotification
+ExecStart=/home/pi/HSFL_LatestNewsNotification/HSFL_LNN_BOT.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
