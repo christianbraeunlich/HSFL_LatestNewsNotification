@@ -22,14 +22,6 @@ import sqlite3
 # Internal
 from HSFL_LNN.SQLiteConnection import SQLiteConnection
 
-### INITIALIZING
-os.system('clear')
-print('######################################')
-print('## HSFL_LatestNewsNotification v0.3 ##')
-print('######################################')
-print()
-print('. . . up and running!')
-
 MAINMENUE, MODUS = range(2)
 
 ### MODUS PANEL ###
@@ -247,6 +239,14 @@ def main():
     s = sched.scheduler(time.time, time.sleep)
     s.enter(60, 1, do_something, (s,))
     s.run()
+
+    ### INITIALIZING
+    os.system('clear')
+    print('######################################')
+    print('## HSFL_LatestNewsNotification v0.3 ##')
+    print('######################################')
+    print()
+    print('. . . up and running!')
 
 if __name__ == '__main__':
     main()

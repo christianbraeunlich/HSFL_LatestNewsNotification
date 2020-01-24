@@ -9,21 +9,35 @@
 
 ## Telegram Channels
 
-* [MB](https://t.me/joinchat/AAAAAFc_lsnfWrpeiC1qYg)
-* [SNL](https://t.me/joinchat/AAAAAEaZouCDskZ6I3MHNg)
-* [BTPE](https://t.me/joinchat/AAAAAEaL-2ex1tl01G8IvQ)
-* [SBT](https://t.me/joinchat/AAAAAE7fyckec7dWnfLOcA)
-* [SMB](https://t.me/joinchat/AAAAAEXT3FoxZScH9-tbkQ)
+| course of studies     	| referral link                                         	| enabled               |
+|-----------------------	|-------------------------------------------------------	|-------------------	|
+| | | |
+| Maschinenbau    	| [Notenaushang MB](https://t.me/joinchat/AAAAAFc_lsnfWrpeiC1qYg) 	    | :heavy_check_mark:   	|
+| Schiffsbautechnik 	| [Notenaushang SBT](https://t.me/joinchat/AAAAAE7fyckec7dWnfLOcA) 	    | :heavy_check_mark:    |
+| Schiffsmotorbau 	| [Notenaushang SMB](https://t.me/joinchat/AAAAAEXT3FoxZScH9-tbkQ) 	    | :heavy_check_mark:    |
+| Seeverkehr, Nautik und Logistik 	| [Notenaushang SNL](https://t.me/joinchat/AAAAAEaZouCDskZ6I3MHNg) 	    | :heavy_check_mark:    |
+| Biotechnology and Process Engineering 	| [Notenaushang BTPE](https://t.me/joinchat/AAAAAEaL-2ex1tl01G8IvQ) 	    | :heavy_check_mark:    |
+| Systemtechnik 	| [Notenaushang ST](https://t.me/joinchat/AAAAAEeCh9t7ggV-J72WWA) 	    | :heavy_check_mark:    |
+| | | |
+| Bio-, Lebensmittel- und Verfahrenstechnologie 	| [Notenaushang BLVT](https://t.me/joinchat/AAAAAFVhiwJsol18Ydsjjg) 	    | :heavy_check_mark:    |
+| Biotechnologie-Verfahrenstechnik 	| [Notenaushang BVT](https://t.me/joinchat/AAAAAENC1sRwF7riSgZADQ) 	    | :x:    |
+| Energiewissenschaften 	| [Notenaushang EW](https://t.me/joinchat/AAAAAFaastXV0beunrXusg) 	    | :x:    |
+| | | |
+| Applied Bio and Food Sciences 	|               |     |
+| Automatisierungstechnik 	|                	    |     |
+| Wind Engineering 	| [Notenaushang WE](https://t.me/joinchat/AAAAAFkB5NBpKr49V95Scg) 	    | :heavy_check_mark:    |
+| | | |
+| Angewandte Informatik   	| [Notenaushang AI](https://t.me/joinchat/AAAAAEsonoQ-cTNMtJzF-Q) 	    | :x:    |
+| Internationale Fachkommunikation   	| [Notenaushang IFK](https://t.me/joinchat/AAAAAFiVLB7akYZH0co4dA) 	    | :heavy_check_mark:    |
+| Medieninformatik   	| [Notenaushang MI](https://t.me/joinchat/AAAAAEYK2OmFKMGJmRKg-A) 	    | :heavy_check_mark:    |
+| Intermedia & Marketing   	|  	    |           |
+| | | |
+| Betriebswirtschaft   	| [Notenaushang BW](https://t.me/joinchat/AAAAAESd1cCXYWO4LeAANA) 	    | :heavy_check_mark:    |
+| Wirtschaftsinformatik   	| [Notenaushang WI](https://t.me/joinchat/AAAAAFZZgCVhiJO6adiNHg) 	    | :heavy_check_mark:    |
+| Business Management   	| [Notenaushang BM](https://t.me/joinchat/AAAAAFdpMMJv7EA6Xiv3rw) 	    | :heavy_check_mark:    |
+| eHealth   	|  	    |       |
 
-* [BVT](https://t.me/joinchat/AAAAAENC1sRwF7riSgZADQ)
-* [WE](https://t.me/joinchat/AAAAAFkB5NBpKr49V95Scg)
-* [EW](https://t.me/joinchat/AAAAAFaastXV0beunrXusg)
-
-* [AI](https://t.me/joinchat/AAAAAEsonoQ-cTNMtJzF-Q)
-
-* [BWL](https://t.me/joinchat/AAAAAESd1cCXYWO4LeAANA)
-* [WI](https://t.me/joinchat/AAAAAFZZgCVhiJO6adiNHg)
-* [BM](https://t.me/joinchat/AAAAAFdpMMJv7EA6Xiv3rw)
+> **_NOTE:_**  verbal re-examination excluded
 
 ## Release History
 
@@ -94,6 +108,15 @@ sudo pip install python-telegram-bot
 
 sudo apt-get install git
 git clone https://github.com/OtterWhisperer/HSFL_LatestNewsNotification
+
+# setup the sqlite3 database
+python setup_sqlite3.py
+```
+
+## Bot-Configuration
+
+```
+
 ```
 
 ## Starting the service on the raspberry pi
