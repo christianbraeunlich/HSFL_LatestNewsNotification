@@ -9,6 +9,13 @@
 
 ## Telegram Channels
 
+| News     	| referral link                                         	| enabled               |
+|-----------------------	|-------------------------------------------------------	|-------------------	|
+| | | |
+| Aktuelle Neuigkeiten    	| [HSFL News](https://t.me/joinchat/AAAAAFc_lsnfWrpeiC1qYg) 	    | :heavy_check_mark:   	|
+
+<br>
+
 | course of studies     	| referral link                                         	| enabled               |
 |-----------------------	|-------------------------------------------------------	|-------------------	|
 | | | |
@@ -41,6 +48,10 @@
 
 ## Release History
 
+* 0.4
+    * ADD: latest News to telegram channel
+    * CHANGE: [telegram.ext.JobQueue](https://python-telegram-bot.readthedocs.io/en/stable/telegram.ext.jobqueue.html) instead of os.system()
+    * ADD: control panel to change crawling behavior
 * 0.3
     * ADD: broadcast all exams for business informatics to the telegram channel
     * CHANGE: exclude token from online-version
@@ -48,7 +59,7 @@
     * CHANGE: hsfl_lnn.db includes columns to save ```course_study``` and ```course_study_id``` attributes
     * CHANGE: spider crawles the mentioned attributes into the database
 * 0.2
-    * CHANGE: telegram-python-bot: 12.3.0
+    * CHANGE: [telegram-python-bot 12.3.0](https://python-telegram-bot.readthedocs.io/en/stable/changelog.html#version-12-3-0) 
     * ADD: Recursive function from base url to all the other courses
 * 0.1
     * The first proper release
@@ -87,6 +98,7 @@ python --version
 
 ## Install HSFL-LatestNewsNotification
 ```
+# Dependecies for scrapy
 sudo apt-get install libffi-dev
 sudo apt-get install libxml2-dev
 sudo apt-get install libxslt1-dev
@@ -97,15 +109,18 @@ sudo apt-get install python3-distutils
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 
+# Testing with Pytest
 pip install pytest
 
-# prebuild lxml library makes it much faster
+# prebuild lxml library - much faster installation
 sudo apt install python3-lxml
 sudo pip install scrapy
 pip -vvvv install --upgrade pyOpenSSL
 
+# Python Telegram Bot Library
 sudo pip install python-telegram-bot
 
+# Git to clone the latest version of HSFL_LNN
 sudo apt-get install git
 git clone https://github.com/OtterWhisperer/HSFL_LatestNewsNotification
 
@@ -116,7 +131,11 @@ python setup_sqlite3.py
 ## Bot-Configuration
 
 ```
+File: ./HSFL_LNN/bot_config.py
 
+BOT_TOKEN = 'INSERT YOUR BOT TOKEN HERE'    <-- add your bot-token here
+
+BOT_ADMINS = []                             <-- add your chat_id here
 ```
 
 ## Starting the service on the raspberry pi
