@@ -2,7 +2,7 @@
 hsfl_lnn.db
 
 # bot configuration
-# bot_config.py
+HSFL_LNN/bot_config.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

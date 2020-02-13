@@ -9,24 +9,49 @@
 
 ## Telegram Channels
 
-* [MB](https://t.me/joinchat/AAAAAFc_lsnfWrpeiC1qYg)
-* [SNL](https://t.me/joinchat/AAAAAEaZouCDskZ6I3MHNg)
-* [BTPE](https://t.me/joinchat/AAAAAEaL-2ex1tl01G8IvQ)
-* [SBT](https://t.me/joinchat/AAAAAE7fyckec7dWnfLOcA)
-* [SMB](https://t.me/joinchat/AAAAAEXT3FoxZScH9-tbkQ)
+| News     	| referral link                                         	| enabled               |
+|-----------------------	|-------------------------------------------------------	|-------------------	|
+| | | |
+| Aktuelle Neuigkeiten    	| [HSFL News](https://t.me/joinchat/AAAAAFc_lsnfWrpeiC1qYg) 	    | :heavy_check_mark:   	|
 
-* [BVT](https://t.me/joinchat/AAAAAENC1sRwF7riSgZADQ)
-* [WE](https://t.me/joinchat/AAAAAFkB5NBpKr49V95Scg)
-* [EW](https://t.me/joinchat/AAAAAFaastXV0beunrXusg)
+<br>
 
-* [AI](https://t.me/joinchat/AAAAAEsonoQ-cTNMtJzF-Q)
+| course of studies     	| referral link                                         	| enabled               |
+|-----------------------	|-------------------------------------------------------	|-------------------	|
+| | | |
+| Maschinenbau    	| [Notenaushang MB](https://t.me/joinchat/AAAAAFc_lsnfWrpeiC1qYg) 	    | :heavy_check_mark:   	|
+| Schiffsbautechnik 	| [Notenaushang SBT](https://t.me/joinchat/AAAAAE7fyckec7dWnfLOcA) 	    | :heavy_check_mark:    |
+| Schiffsmotorbau 	| [Notenaushang SMB](https://t.me/joinchat/AAAAAEXT3FoxZScH9-tbkQ) 	    | :heavy_check_mark:    |
+| Seeverkehr, Nautik und Logistik 	| [Notenaushang SNL](https://t.me/joinchat/AAAAAEaZouCDskZ6I3MHNg) 	    | :heavy_check_mark:    |
+| Biotechnology and Process Engineering 	| [Notenaushang BTPE](https://t.me/joinchat/AAAAAEaL-2ex1tl01G8IvQ) 	    | :heavy_check_mark:    |
+| Systemtechnik 	| [Notenaushang ST](https://t.me/joinchat/AAAAAEeCh9t7ggV-J72WWA) 	    | :heavy_check_mark:    |
+| | | |
+| Bio-, Lebensmittel- und Verfahrenstechnologie 	| [Notenaushang BLVT](https://t.me/joinchat/AAAAAFVhiwJsol18Ydsjjg) 	    | :heavy_check_mark:    |
+| Biotechnologie-Verfahrenstechnik 	| [Notenaushang BVT](https://t.me/joinchat/AAAAAENC1sRwF7riSgZADQ) 	    | :x:    |
+| Energiewissenschaften 	| [Notenaushang EW](https://t.me/joinchat/AAAAAFaastXV0beunrXusg) 	    | :x:    |
+| | | |
+| Applied Bio and Food Sciences 	|               |     |
+| Automatisierungstechnik 	|                	    |     |
+| Wind Engineering 	| [Notenaushang WE](https://t.me/joinchat/AAAAAFkB5NBpKr49V95Scg) 	    | :heavy_check_mark:    |
+| | | |
+| Angewandte Informatik   	| [Notenaushang AI](https://t.me/joinchat/AAAAAEsonoQ-cTNMtJzF-Q) 	    | :x:    |
+| Internationale Fachkommunikation   	| [Notenaushang IFK](https://t.me/joinchat/AAAAAFiVLB7akYZH0co4dA) 	    | :heavy_check_mark:    |
+| Medieninformatik   	| [Notenaushang MI](https://t.me/joinchat/AAAAAEYK2OmFKMGJmRKg-A) 	    | :heavy_check_mark:    |
+| Intermedia & Marketing   	|  	    |           |
+| | | |
+| Betriebswirtschaft   	| [Notenaushang BW](https://t.me/joinchat/AAAAAESd1cCXYWO4LeAANA) 	    | :heavy_check_mark:    |
+| Wirtschaftsinformatik   	| [Notenaushang WI](https://t.me/joinchat/AAAAAFZZgCVhiJO6adiNHg) 	    | :heavy_check_mark:    |
+| Business Management   	| [Notenaushang BM](https://t.me/joinchat/AAAAAFdpMMJv7EA6Xiv3rw) 	    | :heavy_check_mark:    |
+| eHealth   	|  	    |       |
 
-* [BWL](https://t.me/joinchat/AAAAAESd1cCXYWO4LeAANA)
-* [WI](https://t.me/joinchat/AAAAAFZZgCVhiJO6adiNHg)
-* [BM](https://t.me/joinchat/AAAAAFdpMMJv7EA6Xiv3rw)
+> **_NOTE:_**  verbal re-examination excluded
 
 ## Release History
 
+* 0.4
+    * ADD: latest News to telegram channel
+    * CHANGE: [telegram.ext.JobQueue](https://python-telegram-bot.readthedocs.io/en/stable/telegram.ext.jobqueue.html) instead of os.system()
+    * ADD: control panel to change crawling behavior
 * 0.3
     * ADD: broadcast all exams for business informatics to the telegram channel
     * CHANGE: exclude token from online-version
@@ -34,7 +59,7 @@
     * CHANGE: hsfl_lnn.db includes columns to save ```course_study``` and ```course_study_id``` attributes
     * CHANGE: spider crawles the mentioned attributes into the database
 * 0.2
-    * CHANGE: telegram-python-bot: 12.3.0
+    * CHANGE: [telegram-python-bot 12.3.0](https://python-telegram-bot.readthedocs.io/en/stable/changelog.html#version-12-3-0) 
     * ADD: Recursive function from base url to all the other courses
 * 0.1
     * The first proper release
@@ -73,6 +98,7 @@ python --version
 
 ## Install HSFL-LatestNewsNotification
 ```
+# Dependecies for scrapy
 sudo apt-get install libffi-dev
 sudo apt-get install libxml2-dev
 sudo apt-get install libxslt1-dev
@@ -83,17 +109,33 @@ sudo apt-get install python3-distutils
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 
+# Testing with Pytest
 pip install pytest
 
-# prebuild lxml library makes it much faster
+# prebuild lxml library - much faster installation
 sudo apt install python3-lxml
 sudo pip install scrapy
 pip -vvvv install --upgrade pyOpenSSL
 
+# Python Telegram Bot Library
 sudo pip install python-telegram-bot
 
+# Git to clone the latest version of HSFL_LNN
 sudo apt-get install git
 git clone https://github.com/OtterWhisperer/HSFL_LatestNewsNotification
+
+# setup the sqlite3 database
+python setup_sqlite3.py
+```
+
+## Bot-Configuration
+
+```
+File: ./HSFL_LNN/bot_config.py
+
+BOT_TOKEN = 'INSERT YOUR BOT TOKEN HERE'    <-- add your bot-token here
+
+BOT_ADMINS = []                             <-- add your chat_id here
 ```
 
 ## Starting the service on the raspberry pi

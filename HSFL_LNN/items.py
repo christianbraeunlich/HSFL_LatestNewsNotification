@@ -7,9 +7,7 @@
 
 import scrapy
 
-
 class HSFL_LNN_Item(scrapy.Item):
-    # define the fields for your item here like:
     title = scrapy.Field()
     date = scrapy.Field()
     preview = scrapy.Field()
