@@ -21,12 +21,8 @@ from HSFL_LNN.SQLiteConnection import SQLiteConnection
 import pickle
 from threading import Event
 
-<<<<<<< HEAD
-MODUS = range(1)
-=======
 # Pytest
 import pytest
->>>>>>> 8a0b9dd6b875ca845c21e438dd4775ecb7934592
 
 def test_funcfast():
     time.sleep(0.1)
@@ -223,16 +219,9 @@ def main():
     conv_handler = ConversationHandler(
         [CommandHandler('start', start, pass_user_data=True, pass_chat_data=True)],
         { 
-<<<<<<< HEAD
 		MODUS:	[MessageHandler(Filters.regex('^(Auto)$'), grade_auto_start),
                  MessageHandler(Filters.regex('^(Manually)$'), modus),
-=======
-		MODUS:	[MessageHandler(Filters.regex('^(Grades)$'), crawl_grades_job),
-                 MessageHandler(Filters.regex('^(News)$'), crawl_news_job),
-                 MessageHandler(Filters.regex('^(Grades OFF)$'), grades_off),
-                 MessageHandler(Filters.regex('^(News OFF)$'), news_off),
->>>>>>> 8a0b9dd6b875ca845c21e438dd4775ecb7934592
-				 MessageHandler(Filters.regex('^Abbrechen$'), stop)],
+		MessageHandler(Filters.regex('^Abbrechen$'), stop)],
         },
         fallbacks=[CommandHandler('stop', stop)]
     )
