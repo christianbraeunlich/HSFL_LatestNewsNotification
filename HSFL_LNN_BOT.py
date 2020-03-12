@@ -30,7 +30,7 @@ print('######################################')
 print()
 print('. . . up and running!')
 
-MAINMENUE, MODUS = range(2)
+MODUS = range(1)
 
 ### MODUS PANEL ###
 keyboard2 =	[['Auto', 'Manually', 'Abbrechen']
@@ -213,14 +213,7 @@ def main():
     # Use conversation handler to handle states
     conv_handler = ConversationHandler(
         [CommandHandler('start', start, pass_user_data=True, pass_chat_data=True)],
-        {
-        MAINMENUE:   [MessageHandler(Filters.regex('^(Modus)$'), modus),
-                 MessageHandler(Filters.regex('^(Boss)$'), boss),
-                 MessageHandler(Filters.regex('^(Studiengang)$'), grade),
-                 MessageHandler(Filters.regex('^(H3X)$'), grade),
-                 MessageHandler(Filters.regex('^(About)$'), grade),
-                 MessageHandler(Filters.regex('^Abbrechen$'), stop)],
- 
+        { 
 		MODUS:	[MessageHandler(Filters.regex('^(Auto)$'), grade_auto_start),
                  MessageHandler(Filters.regex('^(Manually)$'), modus),
 				 MessageHandler(Filters.regex('^Abbrechen$'), stop)],
