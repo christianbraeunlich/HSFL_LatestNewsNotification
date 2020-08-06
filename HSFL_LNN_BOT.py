@@ -75,13 +75,16 @@ def send_news(context: telegram.ext.CallbackContext):
             text = '<a href="' + str(news_card[4]) + '">' + str(news_card[1]) + '</a>\n' + str(news_card[3])
             context.bot.send_message(chat_id="-1001183748964", text=text, parse_mode=ParseMode.HTML)
 
-def crawl_grades(update, context: telegram.ext.CallbackContext):
+def crawl_grades(context: telegram.ext.CallbackContext):
     os.system("scrapy crawl hsfl_latestgradesnotify")
+    send_grades(context)
 
 def crawl_grades_job(update: telegram.Update, context: telegram.ext.CallbackContext):
+    """ Send notification to user """
+    update.message.reply_text('Activate Grades Job', reply_markup=markup2)
     context.job_queue.run_repeating(crawl_grades, interval=60, first=0)
 
-def send_grades(update, context):
+def send_grades(context: telegram.ext.CallbackContext):
     ## Wirtschaftsinformatik
     with SQLiteConnection('hsfl_lnn.db') as db:
         wi = db.query('SELECT * FROM latestGrades WHERE study_course_id = "wi" AND timestamp BETWEEN ? AND ?', (datetime.datetime.now() - datetime.timedelta(seconds=60), datetime.datetime.now() + datetime.timedelta(seconds=60) ) )
