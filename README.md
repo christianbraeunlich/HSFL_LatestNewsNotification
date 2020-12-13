@@ -1,4 +1,4 @@
-# HSFL_LatestNewsNotification
+# HSFL_LatestNewsNotification ![Python HSFL_LatestNewsNotification](https://github.com/OtterWhisperer/HSFL_LatestNewsNotification/workflows/Python%20HSFL_LatestNewsNotification/badge.svg)
 
 > Our university of applied sciences doesn't inform us of the latest news or the announcement of grades. This is where we come in!
 
