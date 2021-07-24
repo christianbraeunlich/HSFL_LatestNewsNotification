@@ -30,7 +30,7 @@ six==1.12.0
 soupsieve==1.8
 tornado==6.0.3
 Twisted>=20.3.0
-urllib3==1.24.2
+urllib3==1.26.5
 w3lib==1.21.0
 webencodings==0.5.1
 zope.interface==4.7.1
