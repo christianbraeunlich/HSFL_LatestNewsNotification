@@ -5,7 +5,9 @@
 ## Features
 
 * [Latest News](https://hs-flensburg.de/hochschule/aktuelles) 
-* [Latest Grades](https://hs-flensburg.de/hochschule/pruefungsmanagement/notenaushaenge) 
+* [Latest Grades](https://hs-flensburg.de/hochschule/pruefungsmanagement/notenaushaenge) :x:
+
+> Aufgrund der Umstellung auf FlexNow entfält die Benachrichtigung über neue Notenaushänge komplett! Da dies ebenfalls die Hauptfunktion dieses Repo's gewesen ist werde ich es archivieren.
 
 ## Telegram Channels
 
